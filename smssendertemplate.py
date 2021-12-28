@@ -10,7 +10,7 @@ def smssender(strip): #Makes a function called smssender to run code
     #print(strip)# DEBUG LINE Made sure line was getting what was needed
     server=smtplib.SMTP("smtp.gmail.com",587) #Defines connection to a gmail server which can send text
     server.starttls() #Connects to a server to send text
-    server.login("jacksms.send@gmail.com ", "pb22948384") #Login information to that server
+    server.login("jacksms.send@gmail.com ", "password") #Login information to that server
     server.sendmail("5617130630","7274242869 <domain of service provider>",strip) #send a sms through the server from this number, to this number on this cell service, with this message 
     #server.sendmail(x , y , strip) #DEBUG Sends text to me so I can check result
     print("done") #Prints done in text on screen so I know the code ran
